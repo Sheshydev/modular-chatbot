@@ -1,0 +1,23 @@
+{
+    "context": "popcorn",
+    "intents": {
+        "which variety of popcorn can I get":{
+            "matches": ["which popcorn varieties can I get", "what are the different options of popcorn", "what are the popcorn flavours?"],
+            "responses": ["you can find cheese, caramel, and butter popcorn"],
+            "link": "initial",
+            "type": "model"
+        },
+        "why is it so expensive:":{
+            "matches": ["why is it so expensive", "why is it so expensive?"],
+            "responses": ["it is expensive because movie theatres mark up the price of popcorn"],
+            "link": "initial",
+            "type": "model"
+        },
+        "what is the average price of it":{
+            "matches": ["what is the average price of a popcorn bag", "what is the average price of a popcorn bag?", "what is the average price?"],
+            "responses": ["the average price of a popcorn bag is $5"],
+            "link": "initial",
+            "type": "model"
+        }
+    }
+}

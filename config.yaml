@@ -1,0 +1,36 @@
+debug: False
+chat_interface:
+  exit_words:
+    - :q
+    - exit
+  logging: False
+  chat_log_file: 
+chatbot:
+  confidence_treshold: 0.35
+  root_intents_file: data/compiled.json
+  root_context: initial
+  greet_context: greet
+  clarify_context: clarify_intent
+  ambiguity_treshold: 0.1
+model:
+  file_suffix: .joblib
+  storage_dir: models
+  priority_queue_cap: 10
+classifier:
+  test_size: 0
+  iterations: 5000
+  possible_intents: 5
+db_client:
+  db_name: data.db
+skill_interface:
+  max_repeats: 3
+misc:
+  botname: CasualBot
+context_compiler:
+  files:
+    - data/initial.json
+    - data/movie_trivia.json
+    - data/popcorn.json
+    - data/highest_grossing.json
+    - data/citizen_kane.json
+  output_file: data/compiled.json

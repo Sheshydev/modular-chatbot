@@ -1,0 +1,122 @@
+{   
+    "context": "initial",
+    "intents" : {
+        "time": {
+            "matches": ["what is the time", "do you know the time", "please tell me the time", "what hour is it"],
+            "responses": [],
+            "link": "time",
+            "type": "skill"
+        },
+        "meaning of life": {
+            "matches": ["what is the meaning of life", "existence"],
+            "responses": ["42", "the meaning of life is 42", "it would be 42"],
+            "link": "self",
+            "type": "model"
+        },
+        "what makes you happy":{
+            "matches": ["what makes you happy?", "what do you find joy in doing"],
+            "responses": ["I am always happiest whenever I am helping you!", "I am happy when I answer movie questions!"],
+            "link": "self",
+            "type": "model"
+        },
+        "change user": {
+            "matches": ["I'm not that person", "I'm not that user", "change user", "I am someone else", "you have the wrong user", "that is not my name"],
+            "responses": [],
+            "link": "change_user",
+            "type": "skill"
+        },
+        "favourite movie": {
+            "matches": ["what is my favourite movie", "do you remember my favourite film", "what is my favourite movie of all time", "favourite film of all time"],
+            "responses": ["I remember you told me that your favourite was $fav_movie$", "your favourite movie is $fav_movie$"],
+            "link": "template",
+            "type": "skill"
+        },
+        "favourite director": {
+            "matches": ["who is my favourite director", "do you remember my favourite director", "what is my favourite movie director of all time", "best director"],
+            "responses": ["I remember you told me that your favourite was $fav_director$", "your favourite director is $fav_director$"],
+            "link": "template",
+            "type": "skill"
+        },
+        "How I am feeling": {
+            "matches": ["I am feeling down today", "I feel great", "I had a bad day", "today sucked", "today felt amazing", "I was let down", "I am a total disaster", "I am depressed", "I am wasting my time", "it was okay", "fine", "nice", "mediocre"], 
+            "responses": ["I am sorry to hear that", "at least it wasn't too bad right?", "I am glad to hear that", "that's amazing!"], 
+            "link": "emotive", 
+            "type": "skill"
+        },
+        "can I ask about movie trivia": {
+            "matches": ["can I ask you about movie trivia", "I want to do a movie quiz on you", "I want to ask questions about movies"],
+            "responses": ["sure!", "of course!", "I love talking about movies!", "I am very knowledgeable about movies!"], 
+            "link": "movie_trivia", 
+            "type": "model"
+        },
+        "what was the highest grossing film of all time?":{
+            "matches": ["what's the highest grossing movie of all time?", "what is the most the most successful film of all time in terms of box office", "what was the film with most revenue of all time"],
+            "responses": ["It would be Avatar grossing at $2,922,917,914"],
+            "link": "highest_grossing",
+            "type": "model"
+        },
+        "Why do movies serve popcorn?":{
+            "matches": ["why do movies serve popcorn?", "why do movies sell popcorn", "why do theatres have popcorn machines", "why is popcorn popular with movie theatres"],
+            "responses": ["Popcorn became popular among movie theatres during the Great Depression as it was cheap to make and buy."],
+            "link": "popcorn",
+            "type": "model"
+        },
+        "I like watching movies!": {
+            "matches": ["I like watching movies", "I love movies", "movies are awesome", "films are amazing", "films are great"],
+            "responses": ["I love watching movies too!", "every movie is a national treasure"],
+            "link": "self",
+            "type": "model"
+        },
+        "book a movie":{
+            "matches": ["please book a movie, I would like to book for film seats at the theatre", "reserve a theatre film seat please", "I want to watch a movie at the theatre", "can I please book something to watch", "I wanna see the latest films at the movies"],
+            "responses": [],
+            "link": "book_movie",
+            "type": "skill"
+        },
+        "remind movie time and place": {
+            "matches": ["what time is the movie ticket", "when and where is the movie ticket", "what movie am I watching tonight", "whats the film I am going to see", "which movie theatre am I going to this evening"],
+            "responses": ["You have a movie ticket for $book_movie_movie$ at $book_movie_time$ at $book_movie_venue$."],
+            "link": "template",
+            "type": "skill"
+        },
+        "How I feel about the movie": {
+            "matches": ["I hated that movie", "that movie was so bad", "honestly I did not like the movie", "the movie was disgusting", "the cinematography was so good", "I loved the movie a lot", "the film was amazing", "It was an okay movie", "I felt that the movie was mediocre at best", "it was the best movie I've seen in a while"],
+            "responses": ["I'm sorry you had such a bad movie experience.", "At least it wasn't such a bad experience, right?", "I'm glad you had a great viewing!"],
+            "link": "emotive",
+            "type": "skill"
+        },
+        "do you recommend going to the movies or watching films at home?":{
+            "matches": ["do you recommend going to the movies or watching films at home", "should I go to the theatre with my friends or watch movies at home", "what should i do? stay at home or stream movies?", "should I watch my BluRays or go out and watch something at the movie theatre?"],
+            "responses": ["I think you should go to the movies!"],
+            "link": "self",
+            "type": "model"
+        },
+        "what is the best movie of all time?": {
+            "matches": ["what is the best movie of all time", "what is the best film ever", "what do people regard as the best film ever made", "what was the greatest film ever made", "what was the greatest movie of all time", "greatest movie"],
+            "responses": ["It would be Citizen Kane"],
+            "link": "citizen_kane",
+            "type": "model"
+        },
+        "put movie on to-watch list":
+        {
+            "matches": ["add movie to to-watch list", "add movie to my to-watch list", "add movie to my watchlist", "amend to watch list"],
+            "responses": [],
+            "link": "add_towatch",
+            "type": "skill"
+        },
+        "what is on my watch list":
+        {
+            "matches": ["what is on my watch list", "what is on my to-watch list", "what is on my watchlist", "what is on my to-watch list", "please list what I want to watch"],
+            "responses": [],
+            "link": "list_towatch",
+            "type": "skill"
+        },
+        "okay":
+        {
+            "matches": ["okay", "cool", "nice", "great", "coolio", "ahem", "lol"],
+            "responses": ["is there anything else you would like help with?"],
+            "link": "self",
+            "type": "model"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{   
+    "context": "highest_grossing",
+    "intents" : {
+        "who directed the movie?": {
+            "matches": ["who directed the movie", "who was the movie director", "who was the movie directed under"],
+            "responses": ["The movie was directed by James Cameron"],
+            "link": "self",
+            "type": "model"
+        },
+        "who was the main actor?": {
+            "matches": ["who was the main actor", "who was it starring", "which actor played the lead role in the film"],
+            "responses": ["The main actor was Sam Worthington"],
+            "link": "self",
+            "type": "model"
+        },
+        "which camera did they use?": {
+            "matches": ["which camera did they use", "what camera did they use", "what camera was used"],
+            "responses": ["They used the Sony CineAlta F23 camera"],
+            "link": "self",
+            "type": "model"
+        },
+        "what was the budget?": {
+            "matches": ["what was the budget", "what was the budget of the movie", "how much did the film cost to make"],
+            "responses": ["The budget was $237 million"],
+            "link": "self",
+            "type": "model"
+        },
+        "what was it about?": {
+            "matches": ["what was it about", "what was the movie about", "what was the plot of the film"],
+            "responses": ["The movie is about space marines on a mission to the planet Pandora"],
+            "link": "self",
+            "type": "model"
+        },
+        "stop talking about the film": {
+            "matches": ["okay, I'll stop talking about the movie", "I'll stop talking about the film", "I'll stop talking about the movie now", "I won't talk about the film", "by the way, I'll stop talking about the movie"],
+            "responses": ["Okay, got it!"],
+            "link": "initial",
+            "type": "model"
+        }
+    }
+}

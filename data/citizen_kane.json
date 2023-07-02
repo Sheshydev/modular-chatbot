@@ -1,0 +1,53 @@
+{   
+    "context": "citizen_kane",
+    "intents" : {
+        "who was the producer of citizen kane":{
+            "matches": ["who was the producer of citizen kane", "who produced it"],
+            "responses": ["It would be Orson Welles"],
+            "link": "self",
+            "type": "model"
+         },
+        "who was the director of citizen kane":{
+            "matches": ["who was the director of citizen kane", "who directed it"],
+            "responses": ["It would be Orson Welles", "I think it was Orson Welles", "I believe it was Orson Welles"],
+            "link": "self",
+            "type": "model"
+         },
+        "who was the writer of citizen kane":{
+            "matches": ["who was the writer of citizen kane", "who wrote it", "who wrote the screenplay"],
+            "responses": ["It would be Herman J. Mankiewicz"],
+            "link": "self",
+            "type": "model"
+         },
+         "who played as charles foster kane in citizen kane": {
+            "matches": ["who played as charles foster kane in citizen kane", "who played charles foster kane", "who played charles foster kane in citizen kane"],
+            "responses": ["It would be Orson Welles"],
+            "link": "self",
+            "type": "model"
+         }, 
+            "who played as Jedediah Leyland": {
+            "matches": ["who played as Jedediah Leyland?", "who played Jedediah Leyland?", "who played Jedediah Leyland in citizen kane?"],
+            "responses": ["It would be Joseph Cotten"],
+            "link": "self",
+            "type": "model"
+         },
+        "when was citizen kane released": {
+            "matches": ["when was citizen kane released?", "when was citizen kane released", "when was citizen kane released in the cinema?"],
+            "responses": ["It was released in 1941"],
+            "link": "self",
+            "type": "model"
+         },
+        "what was its box office": {
+            "matches": ["what was its box office?", "what was its box office", "what was its box office in the cinema?"],
+            "responses": ["It was $1,200,000"],
+            "link": "self",
+            "type": "model"
+         },
+         "stop asking about movie": {
+            "matches": ["stop asking about movie", "I will stop asking about movie", "stop asking about movie"],
+            "responses": ["Okay!"],
+            "link": "initial",
+            "type": "model"
+         }
+    }
+}

@@ -1,0 +1,5 @@
++----------------------------------------------+
+| CasualBot by Thomas Verlinden                |
+| Made for the Human-AI interaction module     |
+| The University of Nottingham                 |
++----------------------------------------------+
