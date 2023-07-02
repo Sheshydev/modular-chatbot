@@ -1,4 +1,7 @@
 # Modular Chatbot Concept
+This is a chatbot that I have written in Python for my University project.
+The chatbot is modular, which means that you can expand on its dialogue flow in the `skills.py` file. An advantage of this is that it separates the core functionalities of the chatbot (e.g., intent matching, conversation management, fallback behaviour) from behavioural add-ons (e.g., order me a pizza, book a movie ticket etc...)
+
 ## Dependencies
 
 The Python version used for this project is **Python 3.10.8**
